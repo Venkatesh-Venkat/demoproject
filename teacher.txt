@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teacher</title>
+
+     <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Smart<span>Learn</span></a>
+
+   
+
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading"> experienced teachers </h1>
+
+<!-- teacher section  -->
+
+<section class="teacher">
+
+    <div class="box">
+        <img src="images/teacher-2.png" alt="">
+        <h3>Kane</h3>
+        <span>teacher</span>
+        <p>“I’m proud to wake up knowing my work is helping people around the world improve their careers and build great things. While being a full-time instructor is hard work, it lets you work when, where, and how you want.”</p>
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.LinkedIn.com/" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/teacher-1.png" alt="">
+        <h3>Riege</h3>
+        <span>teacher</span>
+        <p>“Teaching on Smart learning has provided me with two important elements: the opportunity to reach more learners than I ever would be able to on my own and a steady stream of extra income.”</p>
+        <div class="share">
+             <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.LinkedIn.com/" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/teacher-3.png" alt="">
+        <h3>Julie</h3>
+        <span>teacher</span>
+        <p>“Smart Learn has changed my life. </p>
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+             <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.LinkedIn.com/" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/teacher-4.png" alt="">
+        <h3>john deo</h3>
+        <span>teacher</span>
+        <p>It’s allowed me to follow my passion and become a teacher I love to see my students succeed and hear them say they’ve learned more, quicker, from my courses than they did in college. It’s so humbling.”</p>
+        <div class="share">
+             <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.LinkedIn.com/" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+          <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <p><a href="https://www.facebook.com/">facebook</a></p>
+            <p><a href="https://www.instagram.com/">instagram</a></p>
+            <p><a href="https://www.twitter.com/">twitter</a></p>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i>smartlearn@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Tirunelveli,Tamilnadu,India </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. Venkatesh </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
