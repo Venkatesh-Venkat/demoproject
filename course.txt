@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+
+   
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<style >
+    #more {display: none;}
+    #more2 {display: none;}
+    #more3 {display: none;}
+    #more4 {display: none;}
+    #more5 {display: none;}
+    #more6 {display: none;}
+
+    
+/* Set a style for all buttons */
+button {
+
+
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+</style>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Smart<span>Learn</span></a>
+
+   
+
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading"> popular courses </h1>
+
+<!-- course section  -->
+
+<section class="course">
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-1.svg" alt="">
+        
+        <h3>Java Programming</h3>
+        <p>The Java Programming course is ideal for beginners like you drawn towards programming and software design. <span id="dots">...</span><span id="more">You will begin with the basics, starting with the installation of the required software. You will learn topics like "What is Java?", Variables, Operators, etc. to get an excellent understanding of the fundamentals of Java, including Arrays and Functions.<br>
+        Smart Learn offers Post Graduate Programs in the field of Software Engineering for Data Science. You can join our Online Software Engineering Courses to develop the advanced Software Engineering skills required to build real-world, large-scale Data Science applications and earn a certificate from the International Institute of Information Technology Hyderabad. We aim to empower our learners with everything they need to succeed in their careers, resulting in 8000+ successful career transitions. </p></span>
+       <button onclick="myFunction()" id="myBtn">Read more</button>
+
+       <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-2.svg" alt="">
+      
+        <h3>Python for Machine Learning</h3>
+        <p>Python is an easy to learn, powerful programming language.<span id="dots2">...</span><span id="more2"> You can use Python when your data analysis tasks need to be integrated with web apps or if statistics code needs to be incorporated into a production database.Being a full-fledged programming language, Python is a great tool to implement algorithms for production use. There are several Python packages for basic data analysis and machine learning. In this free course, you will learn about two popular packages in Python: NumPy and Pandas. These are the essential foundational packages that are required for basic data manipulation.<br>
+
+Smart Learn offers multiple Post Graduate Programs in the field of Artificial Intelligence. You can join India's #1 Ranked artificial intelligence courses and earn a Postgraduate Certificate in the top-rated Artificial Intelligence and Machine Learning online course from Great Lakes in collaboration with the University of Texas. We aim to empower our learners with everything they need to succeed in their careers, resulting in 8000+ successful career transitions.</p></span>
+       <button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+       <script>
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var more2Text = document.getElementById("more2");
+  var btn2Text = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btn2Text.innerHTML = "Read more"; 
+    more2Text.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btn2Text.innerHTML = "Read less"; 
+    more2Text.style.display = "inline";
+  }
+}
+</script>
+
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-3.svg" alt="">
+      
+        <h3>My SQL Basics</h3>
+        <p>My SQL is a relational database management system that is based on the structured query language,<span id="dots3">...</span><span id="more3"> which is known to be the popular language for accessing, managing the records in the database. It is fast, scalable, and easy to use when compared to the Microsoft SQL server and the oracle database.<br>
+         This is written in c programming language and C++ programming language. My SQL supports many operating systems like windows, Linux, MACOS, etc., with C, C++, java languages this also follows client-server architecture when this model is designed for the end-user. This process of My SQL environment is the same as the client-server model. In this SQL free course offered by Great Learning Academy, you will learn the basic concepts required for you to understand all the necessary commands. </p></span>
+       <button onclick="myFunction3()" id="myBtn3">Read more</button>
+
+       <script>
+function myFunction3() {
+  var dots3 = document.getElementById("dots3");
+  var more3Text = document.getElementById("more3");
+  var btn3Text = document.getElementById("myBtn3");
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btn3Text.innerHTML = "Read more"; 
+    more3Text.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btn3Text.innerHTML = "Read less"; 
+    more3Text.style.display = "inline";
+  }
+}
+</script>
+
+
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-4.svg" alt="">
+        
+        <h3>Java Script</h3>
+        <p>JavaScript is the most widely used object-oriented programming language, which uses a JIT compiler. <span id="dots4">...</span><span id="more4">It can be used to develop web pages and mobile applications, and most of the current web browsers are developed using Javascript.<br>
+        It is a simple language, which is compatible with HTML and CSS. It is critical for every software engineer to learn JavaScript. This course on “JavaScript in Hindi” will teach you the hands-on implementation of JavaScript concepts in Hindi. Here, you will learn JavaScript, which includes different ways where we can write. This course contains concepts like type-coercion, JavaScript properties, etc. You will learn about different operators, conditional statements, etc. </p></span>
+        <button onclick="myFunction4()" id="myBtn4">Read more</button>
+
+        <script>
+function myFunction4() {
+  var dots4 = document.getElementById("dots4");
+  var more4Text = document.getElementById("more4");
+  var btn4Text = document.getElementById("myBtn4");
+
+  if (dots4.style.display === "none") {
+    dots4.style.display = "inline";
+    btn4Text.innerHTML = "Read more"; 
+    more4Text.style.display = "none";
+  } else {
+    dots4.style.display = "none";
+    btnText4.innerHTML = "Read less"; 
+    moreText4.style.display = "inline";
+  }
+}
+</script>
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 3 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-5.svg" alt="">
+       
+        <h3>Data Structure in C</h3>
+        <p>C is a very flexible and well-established language thus making it the mother of all programming languages.<span id="dots5">...</span><span id="more5"> Many programs, libraries, operating systems, etc are implemented in C. For example, in Linux, more than 85% of code is written in C. Getting into tech giants we need to have a solid knowledge of Data Structures in c that’s what we will be covering in this course.<br>
+        Smart Learn offers Post Graduate Programs in the field of Software Engineering for Data Science. You can join our Online Software Engineering Courses to develop the advanced Software Engineering skills required to build real-world, large-scale Data Science applications and earn a certificate from the International Institute of Information Technology Hyderabad. We aim to empower our learners with everything they need to succeed in their careers, resulting in 8000+ successful career transitions.</p></span>
+        <button onclick="myFunction5()" id="myBtn5">Read more</button>
+
+        <script>
+function myFunction5() {
+  var dots5 = document.getElementById("dots5");
+  var more5Text = document.getElementById("more5");
+  var btn5Text = document.getElementById("myBtn5");
+
+  if (dots5.style.display === "none") {
+    dots5.style.display = "inline";
+    btn5Text.innerHTML = "Read more"; 
+    more5Text.style.display = "none";
+  } else {
+    dots5.style.display = "none";
+    btn5Text.innerHTML = "Read less"; 
+    more5Text.style.display = "inline";
+  }
+}
+</script>
+
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-6.svg" alt="">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <h3>Excel for Beginners</h3>
+        <p>Excel for Beginners course will provide you <span id="dots6">...</span><span id="more6">with the requisite understanding and skillsets to be able to make the most effective use of Microsoft Excel.<br>
+        Microsoft Excel is an industry-leading spreadsheet software and is a powerful analysis as well as a data visualization tool. You will learn to use formulas to do complex calculations to analyze your data. You will also get an extensive understanding of concepts such as borders, sorting and filtering with the data, if-else condition, date, and time with the free excel course online.</p></span>
+       
+
+       <button onclick="myFunction6()" id="myBtn6">Read more</button>
+
+<script>
+function myFunction6() {
+  var dots6 = document.getElementById("dots6");
+  var more6Text = document.getElementById("more6");
+  var btn6Text = document.getElementById("myBtn6");
+
+  if (dots6.style.display === "none") {
+    dots6.style.display = "inline";
+    btn6Text.innerHTML = "Read more"; 
+    more6Text.style.display = "none";
+  } else {
+    dots6.style.display = "none";
+    btn6Text.innerHTML = "Read less"; 
+    more6Text.style.display = "inline";
+  }
+}
+</script>
+
+
+
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 5 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+             <p><a href="https://www.facebook.com/">facebook</a></p>
+            <p><a href="https://www.instagram.com/">instagram</a></p>
+            <p><a href="https://www.twitter.com/">twitter</a></p>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i>smartlearn@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Tirunelveli,Tamilnadu,India </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. Venkatesh </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
