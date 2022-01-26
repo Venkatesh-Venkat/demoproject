@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+ 
+   
+
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+    *{
+
+
+        font-size: x-large;
+
+        text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+    
+    .form{
+    padding: 30px 40px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    font-size: medium;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+
+
+
+    text-align: left;
+    border: 2px solid #66666680;
+    display: block;
+    border-radius: 4px;
+    font-size:small;
+    width: 70%;
+    padding: 10px;
+}
+
+.form-group textarea{
+     text-align: left;
+    border: 2px solid #66666680;
+    display: block;
+    border-radius: 4px;
+    font-size:small;
+    width: 70%;
+
+    padding: 10px;
+
+}
+
+.form-group input#message
+{
+    height: 12rem;
+}
+.form input::placeholder{
+
+    color: #2a0845;
+}
+
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-group span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+    visibility: visible;
+}
+
+
+.form-group.success input{
+    border-color: #2ecc71;
+}
+
+.form-group.error input{
+    border-color: #e74c3c;
+}
+
+.form-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+
+.form #submit{
+    background-color: #2a0845;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 40%;
+    padding: 20px;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Smart<span>Learn</span></a>
+
+   
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+        <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+
+<!-- contact section  -->
+
+
+<div class="image">
+    <img src="images/contact-img.svg" style="width:30%">
+</div>
+
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <h2 style="font-size: x-large; color: var(--orange); text-align: center;">Contact us</h2>
+        </div>
+
+
+
+    <form action="" class="form">
+
+      <div class="form-group">
+       <label for="contact-name">Name</label>
+        <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+        <span class='error-message' id='name-error'></span>
+    </div>
+
+    <div class="form-group">
+        <label for="contact-phone">Phone Number</label>
+        <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+        <span class='error-message' id='phone-error'></span>
+    </div>
+
+    <div class="form-group">
+        <label for="contact-email">Email address</label>
+        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+        <span class='error-message' id='email-error'></span>
+    </div>   
+
+    <div class="form-group">
+        <label for='contactMessage'>Your Message</label>
+        <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+        <span class='error-message' id='message-error'></span>
+    </div>
+
+    <button onclick='return validateForm()' class="btn btn-default">Submit </button>
+    <span class='error-message' id='submit-error'style='visibility: hidden;'></span>
+</form>
+</div>
+
+
+
+
+<!-- contact section  -->
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains.!</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+           <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+              <p><a href="https://www.facebook.com/">facebook</a></p>
+            <p><a href="https://www.instagram.com/">instagram</a></p>
+            <p><a href="https://www.twitter.com/">twitter</a></p>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i>smartlearn@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i>Tirunelveli,Tamilnadu,India </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. Venkatesh </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+<script src="script1.js">
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
