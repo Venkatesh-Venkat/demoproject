@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+
+#more {display: none;}
+    #more2 {display: none;}
+    #more3 {display: none;}
+
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=tel]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Set a style for all buttons */
+button {
+
+
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Smart<span>Learn</span></a>
+
+   
+
+    
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+
+    </nav>
+
+
+
+     <div class="icons">
+        
+        
+        <i class="button" id="ido1"></i>
+    </div>
+
+    <!--login form-->
+<div class="login-form-container">
+
+   <button onclick="document.getElementById('id01').style.display='block'" >Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="email"><b>email</b></label>
+      <input type="email" placeholder="Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+
+
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<!--  sign up button-->
+  <div class="icons">
+        
+        
+        <i class="button" id="Sign"></i>
+    </div>
+
+    <!--login form-->
+<div class="Signup-form-container">
+ <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+
+
+      <label for="uname"><b>Firstname</b></label>
+      <input type="text" placeholder="Enter Firstname" name="fname"pattern="[A-Za-z]{6}" required>
+
+      <label for="uname"><b>Lastname</b></label>
+      <input type="text" placeholder="Enter Lastname" name="lname" pattern="[A-Za-z]{4}" required>
+       
+        <label for="contact-phone"><b>Phone Number</b></label><br>
+        <input type="tel"   placeholder="Ex: 1231231234" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required >
+        
+    
+       
+
+      <label for="email"><b>email</b></label>
+      <input type="email" placeholder="Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+       
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
+
+
+
+
+</header>
+
+<!-- login form container  -->
+
+ 
+
+
+<!-- home section  -->
+
+<section class="home">
+
+   
+
+
+    <div class="content">
+        <h3>E-learning is a better way of learning</h3>
+        <p>Changing learning for the better
+Whether you want to learn or to share what you know, you’ve come to the right place. As a global destination for online learning, we connect people through knowledge.</p>
+        
+    </div>
+
+    <div class="image">
+        <img src="images/home-img.svg" alt="">
+    </div>
+
+        <div class="content">
+
+            <h3>Transform your life through education</h3>
+            <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+
+            
+
+
+    </div>
+
+</section>
+
+
+<h1 class="heading"> Certification courses </h1>
+
+<!-- course section  -->
+
+<section class="course">
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-1.svg" alt="">
+       
+        <h3>Data Science Foundations</h3>
+        <p>This data science online free course is a great start for beginners.  <span id="dots">...</span><span id="more">It will introduce the learners to Data Science and Analytics Landscape and all the Data Science and Data Science Life Cycle fundamentals. The course will also introduce the learner to Data Mining, Machine Learning, and languages of data science.Smart Learning offers numerous data science online courses in collaboration with globally recognized universities like North Western School of Professional Studies, The University of Texas at Austin, Massachusetts Institute of Technology, Great Lakes, etc. These courses provide live mentorship and personalized guidance that helps in clearing doubts and gaining confidence in what you do. Smart Learn has transformed the career of many learners who wanted to pursue a career in the field of data science.  </p></span>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+
+       <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-2.svg" alt="">
+       
+        <h3>Introduction to Digital Marketing</h3>
+        <p>There are numerous online digital marketing courses<span id="dots2">...</span><span id="more2"> but this digital marketing online free course is perfect for individuals who are new to the digital marketing domain and are seeking job opportunities.With the rise of the internet, Digital Marketing has now become the need of the hour with the majority of organizations and individuals trying to cash in opportunities and careers in the field. Learn Digital Marketing with free online certification course provided by Smart Learn. This introduction to digital marketing course with a free certificate will help you to understand the core fundamentals of Digital Marketing and touch upon various concepts like Digital Marketing, Social Media Marketing, On-Page, Off-Page SEO, Affiliate Marketing, Automated Marketing, PPC, Public Relations, etc. There are numerous online digital marketing courses but this digital marketing online free course is perfect for individuals who are new to the digital marketing domain and are seeking job opportunities.  </p></span>
+        <button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+       <script>
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var more2Text = document.getElementById("more2");
+  var btn2Text = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btn2Text.innerHTML = "Read more"; 
+    more2Text.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btn2Text.innerHTML = "Read less"; 
+    more2Text.style.display = "inline";
+  }
+}
+</script>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="amount">Free</span>
+        <img src="images/course-3.svg" alt="">
+        
+        <h3>My SQL Basics</h3>
+        <p>My SQL is a relational database management system<span id="dots3">...</span><span id="more3"> that is based on the structured query language, which is known to be the popular language for accessing, managing the records in the database. It is fast, scalable, and easy to use when compared to the Microsoft SQL server and the oracle database.This is written in c programming language and C++ programming language. My SQL supports many operating systems like windows, Linux, MACOS, etc., with C, C++, java languages this also follows client-server architecture when this model is designed for the end-user. This process of My SQL environment is the same as the client-server model. In this SQL free course offered by Smart Learn Academy, you will learn the basic concepts required for you to understand all the necessary commands. </p></span>
+          <button onclick="myFunction3()" id="myBtn3">Read more</button>
+
+       <script>
+function myFunction3() {
+  var dots3 = document.getElementById("dots3");
+  var more3Text = document.getElementById("more3");
+  var btn3Text = document.getElementById("myBtn3");
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btn3Text.innerHTML = "Read more"; 
+    more3Text.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btn3Text.innerHTML = "Read less"; 
+    more3Text.style.display = "inline";
+  }
+}
+</script>
+        <div class="icons">
+            <p> <i class="far fa-clock"></i> 2 hours </p>
+            <p> <i class="far fa-calendar"></i> 6 months </p>
+            <p> <i class="fas fa-book"></i> 12 modules </p>
+        </div>
+    </div>
+
+<a href="course.html" style="text-align: center;" class="btn">get started</a>
+   
+
+   
+</section>
+
+
+
+
+<!-- about section  -->
+
+<h1 class="heading">About us</h1>
+
+<section class="about us" id="about">
+
+<img src="about.jpg" style="width:100%">
+
+<div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-about"></i>
+
+<h2 style="font-size:25px;" >Impactful Learning for Everyone</h2>
+  <p style="font-size:15px;">Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains. With best in class completion rates, learner satisfaction and career transitions, when you learn from Smart Learning, you #PowerAhead.
+
+  We help organizations of all types and sizes prepare for the path ahead — wherever it leads. Our curated collection of business and technical courses help companies, governments, and nonprofits go further by placing learning at the center of their strategies.</p>
+
+  <br>
+<br>
+
+
+<h2 style="font-size:25px;">About this Course
+1,832,378 recent views</h2>
+
+
+    <p style="font-size:15px;">In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.
+
+THE SCIENCE OF WELL BEING WAS PRODUCED IN PART DUE TO THE GENEROUS FUNDING OF THE DAVID F. SWENSEN FUND FOR INNOVATION IN TEACHING.</p>
+
+<p style="font-size:15px;">Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of smartlearn study groups around the world.
+
+Donations to smartlearn go toward our education initiatives, and help pay for servers, services, and staff.</p>
+<br>
+</div>
+</section>
+
+
+
+
+
+
+
+<!-- footer section  -->
+
+<br>
+<br>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+           
+
+            <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+
+
+            <p><a href="https://www.facebook.com/">facebook</a></p>
+            <p><a href="https://www.instagram.com/">instagram</a></p>
+            <p><a href="https://www.twitter.com/">twitter</a></p>
+
+           
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i> smartlearn@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i>Tirunelveli,Tamilnadu,India </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. Venkatesh </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+<!-- custom js file link -->
+<!--<script src="js/script.js"></script>-->
+
+
+
+   
+
+
+
+
+
+   
+
+</body>
+</html>
