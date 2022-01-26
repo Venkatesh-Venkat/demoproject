@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+   
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Smart<span>Learn</span></a>
+
+   
+
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+        <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading">About us</h1>
+
+<!-- about section  -->
+
+<section class="about us" id="about">
+
+<img src="about.jpg" style="width:100%">
+
+<div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-about"></i>
+
+<h2 style="font-size:25px;" >Impactful Learning for Everyone</h2>
+  <p style="font-size:15px;">Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains. With best in class completion rates, learner satisfaction and career transitions, when you learn from Smart Learning, you #PowerAhead.
+
+  We help organizations of all types and sizes prepare for the path ahead — wherever it leads. Our curated collection of business and technical courses help companies, governments, and nonprofits go further by placing learning at the center of their strategies.</p>
+
+  <br>
+<br>
+
+
+<h2 style="font-size:25px;">About this Course
+1,832,378 recent views</h2>
+
+
+    <p style="font-size:15px;">In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.
+
+THE SCIENCE OF WELL BEING WAS PRODUCED IN PART DUE TO THE GENEROUS FUNDING OF THE DAVID F. SWENSEN FUND FOR INNOVATION IN TEACHING.</p>
+
+<p style="font-size:15px;">Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of smartlearn study groups around the world.
+
+Donations to smartlearn go toward our education initiatives, and help pay for servers, services, and staff.</p>
+<br>
+<h2 style="font-size:25px;""color:orange">
+
+Expansion to 6 new cities</h2>
+<p style="font-size:15px;">Smart Learn expands its wings to 6 metropolitan centers including Chennai, Bangalore, Gurgaon, Pune, Mumbai, and Hyderabad. Two new programs are launched – PG Program in Management and BACP (Business Analytics Certification Program). We impact 1000+ working professionals’ lives and careers through our programs.</p>
+
+
+
+</div>
+
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Smart Learn is one of India’s leading ed-tech companies for professional and higher education. We offer career-relevant programs from world-class universities in the most in-demand domains.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+           <a href="home.html">home</a>
+        <a href="course.html">course</a>
+         <a href="about.html">about us</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+             <p><a href="https://www.facebook.com/">facebook</a></p>
+            <p><a href="https://www.instagram.com/">instagram</a></p>
+            <p><a href="https://www.twitter.com/">twitter</a></p>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i>smartlearn@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Tirunelveli,Tamilnadu,India </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. Venkatesh </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
